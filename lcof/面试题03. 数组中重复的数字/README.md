@@ -75,7 +75,7 @@ class Solution {
 class Solution {
 public:
     int findRepeatNumber(vector<int>& nums) {
-        sort(nums.begin(), nums.end());
+        sort(nums.begin(), nums.end());//冒泡
         for (int i = 0;; ++i) {
             if (nums[i] == nums[i + 1]) {
                 return nums[i];
